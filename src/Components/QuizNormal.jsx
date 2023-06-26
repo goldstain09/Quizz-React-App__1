@@ -52,7 +52,7 @@ export default function QuizNormal() {
      {
                 c.QuizNormal.length > 0 ? c.QuizNormal.map((item, index) => (
                     <div key={item.id}>
-                        <h3 className='text-center mt-4' >Ques.{index + 1}){item.question}</h3>
+                        <h3 className='text-center' >Ques.{index + 1}){item.question}</h3>
                         <div className='text-center mx-1'>
                             <p className='form-check-label' >(a)&nbsp;{item.opt1}</p>
                             <input 
