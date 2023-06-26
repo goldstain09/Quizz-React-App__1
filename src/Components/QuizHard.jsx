@@ -27,15 +27,15 @@ export default function QuizHard() {
 
 
     useEffect(() => {
-        if(checkH){
+        if (checkH) {
             dispatch({
-                type:'Hard',
-                payload:markH
+                type: 'Hard',
+                payload: markH
             });
-            document.getElementById('QuizHardResult_btn').style.display='none';     
+            document.getElementById('QuizHardResult_btn').style.display = 'none';
         }
-      },[checkH])
-    
+    }, [checkH])
+
 
 
 
@@ -127,25 +127,25 @@ export default function QuizHard() {
                 )) : <p></p>
             }
 
-           
+
             <div className='text-center py-4'>
-                <button 
-                id='QuizHardResult_btn' 
-                style={{ display: 'none' }}  
-                className=' btn btn-outline-warning text-center'
-                onClick={() => {
-                    setCheckH(true);
-                    dispatch({type:'result'}) 
-                }}
+                <button
+                    id='QuizHardResult_btn'
+                    style={{ display: 'none' }}
+                    className=' btn btn-outline-warning text-center'
+                    onClick={() => {
+                        setCheckH(true);
+                        dispatch({ type: 'result' })
+                    }}
                 >Show Results
                 </button>
             </div>
 
             <div className='text-center'>
                 {
-                    checkH && <Result checkH={checkH}/>
+                    checkH && <Result checkH={checkH} />
                 }
-            
+
             </div>
 
 

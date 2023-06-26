@@ -53,7 +53,7 @@ export default function QuizEasy() {
             <h2 align='center'>Easy Level</h2>
             {
                 c.QuizEasy.length > 0 && c.QuizEasy.map((item, index) => (
-                    <div key={item.id} >
+                    <div key={item.id}>
                         <h3 className='text-center' >Ques.{index + 1}){item.question}</h3>
                         <div className='text-center mx-1'>
                             <p className='form-check-label' >(a)&nbsp;{item.opt1}</p>

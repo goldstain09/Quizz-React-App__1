@@ -1,66 +1,77 @@
-::placeholder{
+::placeholder {
     color: white;
     font-family: 'Raleway', sans-serif;
 }
-.continueBtn{font-size: 2rem;}
 
-.bg{
+.continueBtn {
+    font-size: 2rem;
+}
+
+.bg {
     background: url('../Images/img1.jpg');
-    width: 100%!important;
-    height:100%!important;
+    width: 100% !important;
+    height: 100% !important;
     background-attachment: fixed;
 }
-.bg_cntnr{
-    background: rgba(0, 0, 0,.4);
+
+.bg_cntnr {
+    background: rgba(0, 0, 0, .4);
     border-radius: 8px;
-    box-shadow: 3px 3px 10px  #fd7e14;
+    box-shadow: 3px 3px 10px #fd7e14;
 }
-.bg_cntnr h2{
+
+.bg_cntnr h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     font-size: 4rem;
-    padding-top:  3rem;
+    padding-top: 3rem;
 }
 
 h3 {
-    margin: 5rem 0 1rem 0!important;
+    margin: 5rem 0 1rem 0 !important;
     font-family: 'Maven Pro', sans-serif;
 }
-.bg_cntnr h5{
+
+.bg_cntnr h5 {
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
-    padding-bottom: 1rem ;
+    padding-bottom: 1rem;
 }
-button{
-    font-size: 1.7rem!important;
+
+button {
+    font-size: 1.7rem !important;
     font-family: 'Raleway';
     width: 20%;
 
 
 }
-p{
+
+p {
     border-radius: 5px;
     display: inline;
     font-size: 1.4rem;
-    padding:0 3rem;
-    background: rgba(0, 0, 0,.2);
+    padding: 0 3rem;
+    background: rgba(0, 0, 0, .2);
 }
-input{
-    font-size: 1.7rem!important;
-    background: linear-gradient(to left ,rgba(181, 205, 238, 0.592), rgba(134, 134, 134, 0.342), rgba(185, 185, 177, 0.572) ), rgb(99, 99, 99);
+
+input {
+    font-size: 1.7rem !important;
+    background: linear-gradient(to left, rgba(181, 205, 238, 0.592), rgba(134, 134, 134, 0.342), rgba(185, 185, 177, 0.572)), rgb(99, 99, 99);
     border: 0px transparent solid;
     color: rgb(255, 255, 255);
 }
-input[type='radio']{
+
+input[type='radio'] {
     margin-bottom: 5px;
     width: 1.6rem;
     height: 1.6rem;
     border-radius: 0px;
 }
-.submitbtn{
-    font-size: 1rem!important;
-    width: auto!important;
-    margin-left: 48%!important;
+
+.submitbtn {
+    font-size: 1rem !important;
+    width: auto !important;
+    margin-left: 48% !important;
 }
 
 
@@ -70,11 +81,12 @@ input[type='radio']{
 
 
 @media (max-width:1400px) {
-    
-    p{
+
+    p {
         font-size: 1rem;
-    }    
-    input[type='radio']{
+    }
+
+    input[type='radio'] {
         width: 1rem;
         height: 1rem;
     }
@@ -82,15 +94,17 @@ input[type='radio']{
 
 
 @media (max-width:992px) {
-    p{
+    p {
         font-size: .9rem;
-    }    
-    input[type='radio']{
+    }
+
+    input[type='radio'] {
         top: -.2rem;
         width: 1rem;
         height: 1rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.3rem;
     }
 }
@@ -98,22 +112,25 @@ input[type='radio']{
 
 
 @media (max-width:768px) {
-    p{
+    p {
         font-size: .8rem;
-    }    
-    input[type='radio']{
+    }
+
+    input[type='radio'] {
         top: -.2rem;
         width: 1rem;
         height: 1rem;
     }
-    h3{
+
+    h3 {
         font-size: 1.1rem;
         margin: 4rem 0 .7rem 0;
     }
-    .submitbtn{
-        font-size: .8rem!important;
-        width: auto!important;
-        margin-left: 45%!important;
+
+    .submitbtn {
+        font-size: .8rem !important;
+        width: auto !important;
+        margin-left: 45% !important;
     }
 }
 
@@ -123,25 +140,30 @@ input[type='radio']{
 
 
 @media (max-width:576px) {
-    input{
-        font-size: 1rem!important;width: 40%!important;
+    input {
+        font-size: 1rem !important;
+        width: 40% !important;
     }
-    p{
+
+    p {
         font-size: .7rem;
-    }    
-    input[type='radio']{
+    }
+
+    input[type='radio'] {
         top: -.2rem;
-        width: .7rem!important;
+        width: .7rem !important;
         height: .7rem;
     }
-    h3{
+
+    h3 {
         font-size: .95rem;
         margin: 3rem 0 .7rem 0;
     }
-    .submitbtn{
-        font-size: .7rem!important;
-        width: auto!important;
-        margin-left: 43%!important;
+
+    .submitbtn {
+        font-size: .7rem !important;
+        width: auto !important;
+        margin-left: 43% !important;
     }
 }
 
@@ -149,18 +171,21 @@ input[type='radio']{
 
 
 @media (max-width:394px) {
-    h2{
-        font-size: 1.6rem!important;
+    h2 {
+        font-size: 1.6rem !important;
     }
-    p{
+
+    p {
         font-size: .6rem;
-    }    
-    input[type='radio']{
+    }
+
+    input[type='radio'] {
         top: -.2rem;
         width: .6rem;
         height: .6rem;
     }
-    h3{
+
+    h3 {
         font-size: .85rem;
         margin: 2.5rem 0 .7rem 0;
     }
@@ -170,34 +195,40 @@ input[type='radio']{
 
 
 @media (max-width:805px) {
-    .continueBtn{
-        font-size: 1rem!important;
+    .continueBtn {
+        font-size: 1rem !important;
     }
-    input{
-        font-size: 1rem!important;
+
+    input {
+        font-size: 1rem !important;
         width: 40%;
     }
-    
+
 }
 
 @media (max-width:534px) {
-    .continueBtn{
-        font-size: .7rem!important;width: 25%!important;
+    .continueBtn {
+        font-size: .7rem !important;
+        width: 25% !important;
     }
-    input{
-        font-size: 1rem!important;
+
+    input {
+        font-size: 1rem !important;
         width: 40%;
     }
-    
+
 }
 
 @media (max-width:373px) {
-    .continueBtn{
-        font-size: .5rem!important;width: 25%!important;padding: 0!important;
+    .continueBtn {
+        font-size: .5rem !important;
+        width: 25% !important;
+        padding: 0 !important;
     }
-    input{
-        font-size: 1rem!important;
+
+    input {
+        font-size: 1rem !important;
         width: 40%;
     }
-    
+
 }
