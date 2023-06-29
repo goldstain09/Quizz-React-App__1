@@ -92,6 +92,60 @@ input[type='radio'] {
     }
 }
 
+@media (max-width:1200px) {
+    #start_withasy{
+        font-size: 1rem!important;
+    }
+    #QuizEasyResult_btn {
+        font-size: 1rem!important;
+    }
+    
+    #QuizNormalResult_btn {
+        font-size: 1rem!important;
+    }
+    
+    #QuizHardResult_btn {
+        font-size: 1rem!important;
+    }
+}
+
+@media (max-width:773px) {
+    
+    #start_withasy{
+        font-size: .8rem!important;
+    }
+    #QuizEasyResult_btn {
+        font-size: .8rem!important;
+    }
+
+    #QuizNormalResult_btn {
+        font-size: .8rem!important;
+    }
+
+    #QuizHardResult_btn {
+        font-size: .8rem!important;
+    }
+}
+
+@media (max-width:658px) {
+    
+    #start_withasy{
+        font-size: .6rem!important;
+    }
+    #QuizEasyResult_btn {
+        font-size: .6rem!important;
+    }
+
+    #QuizNormalResult_btn {
+        font-size: .6rem!important;
+    }
+
+    #QuizHardResult_btn {
+        font-size: .6rem!important;
+    }
+}
+
+
 
 @media (max-width:992px) {
     p {
@@ -165,6 +219,29 @@ input[type='radio'] {
         width: auto !important;
         margin-left: 43% !important;
     }
+
+
+    #start_withasy{
+        font-size: .5rem!important;
+        width: 50%;
+     }
+    #QuizEasyResult_btn {
+        font-size: .5rem!important;
+        width: 50%;
+     }
+
+    #QuizNormalResult_btn {
+        font-size: .5rem!important; 
+        width: 50%;
+    }
+
+    #QuizHardResult_btn {
+        font-size: .5rem!important;
+        width: 50%;
+     }
+
+
+
 }
 
 
@@ -230,5 +307,31 @@ input[type='radio'] {
         font-size: 1rem !important;
         width: 40%;
     }
+
+
+
+    
+
+    #start_withasy{
+        font-size: .5rem!important;
+        width: 90%;
+     }
+    #QuizEasyResult_btn {
+        font-size: .5rem!important;
+        width: 90%;
+     }
+
+    #QuizNormalResult_btn {
+        font-size: .5rem!important; 
+        width: 90%;
+    }
+
+    #QuizHardResult_btn {
+        font-size: .5rem!important;
+        width: 90%;
+     }
+
+
+
 
 }

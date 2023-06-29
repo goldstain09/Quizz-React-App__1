@@ -82,6 +82,7 @@ export default function MainPage() {
           {
             nameCheck && <div className='text-center py-4'>
               <button
+              id='start_withasy'
                 onClick={() => {
                   setCheckEasy(true)
                 }}
