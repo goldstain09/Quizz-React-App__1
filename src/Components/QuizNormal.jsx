@@ -52,15 +52,15 @@ export default function QuizNormal() {
             {
                 c.QuizNormal.length > 0 ? c.QuizNormal.map((item, index) => (
                     <div key={item.id}>
-                        <h3 className='text-center' >Ques.{index + 1}){item.question}</h3>
-                        <div className='text-center mx-1'>
+                        <h3 className='text-left' align='left' >Ques.{index + 1}){item.question}</h3>
+                        <div className='text-left mx-1' align='left'>
                             <p className='form-check-label' >(a)&nbsp;{item.opt1}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt1}
-                                className={`form-check-input   ${item.id} for_result_btn`}
+                                className={` ${item.id} for_result_btn mx-sm-1 mx-1 mx-lg-2`}
                                 checked={selectedOption === item.opt1}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -68,14 +68,14 @@ export default function QuizNormal() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'align='left'>
                             <p className='form-check-label'>(b)&nbsp;{item.opt2}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt2}
-                                className={`form-check-input  ${item.id}  for_result_btn`}
+                                className={`${item.id}  for_result_btn mx-sm-1 mx-1 mx-lg-2`}
                                 checked={selectedOption === item.opt2}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -83,14 +83,14 @@ export default function QuizNormal() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'align='left'>
                             <p className='form-check-label' >(c)&nbsp;{item.opt3}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt3}
-                                className={`form-check-input  ${item.id} for_result_btn`}
+                                className={`${item.id} for_result_btn mx-sm-1 mx-1 mx-lg-2`}
                                 checked={selectedOption === item.opt3}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -98,14 +98,14 @@ export default function QuizNormal() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'align='left'>
                             <p className='form-check-label'>(d)&nbsp;{item.opt4}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt4}
-                                className={`form-check-input  ${item.id} for_result_btn`}
+                                className={`${item.id} for_result_btn mx-sm-1 mx-1 mx-lg-2`}
                                 checked={selectedOption === item.opt4}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -115,7 +115,7 @@ export default function QuizNormal() {
 
                         </div>
                         <div>
-                            <button id={item.id} className={`btn btn-outline-success submitbtn ${item.id}`} onClick={() => {
+                            <button id={item.id} className={`btn btn-outline-secondary submitbtn ${item.id}`} onClick={() => {
                                 if (item.rightAnswer === selectedOption) {
                                     setMarkN(markN + 1);
                                 }
@@ -126,7 +126,7 @@ export default function QuizNormal() {
                                 }
                                 setBtn_Click(btn_click + 1)
 
-                            }} type='submit' style={{ display: 'none' }} ><i class="bi bi-check2-circle"></i></button>
+                            }} type='submit' style={{marginLeft:'0%', display: 'none' }} ><i class="bi bi-check2-circle p-0 m-0"></i></button>
                         </div>
                     </div>
                 )) : <p></p>

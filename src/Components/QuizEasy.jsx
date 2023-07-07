@@ -54,15 +54,15 @@ export default function QuizEasy() {
             {
                 c.QuizEasy.length > 0 && c.QuizEasy.map((item, index) => (
                     <div key={item.id}>
-                        <h3 className='text-center' >Ques.{index + 1}){item.question}</h3>
-                        <div className='text-center mx-1'>
+                        <h3 className='text-left' >Ques.{index + 1}){item.question}</h3>
+                        <div className='text-left mx-1'>
                             <p className='form-check-label' >(a)&nbsp;{item.opt1}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt1}
-                                className={`form-check-input   ${item.id} for_result_btn`}
+                                className={` mx-2  ${item.id} for_result_btn`}
                                 checked={selectedOption === item.opt1}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -70,14 +70,14 @@ export default function QuizEasy() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'>
                             <p className='form-check-label'>(b)&nbsp;{item.opt2}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt2}
-                                className={`form-check-input  ${item.id}  for_result_btn`}
+                                className={` mx-2 ${item.id}  for_result_btn`}
                                 checked={selectedOption === item.opt2}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -85,14 +85,14 @@ export default function QuizEasy() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'>
                             <p className='form-check-label' >(c)&nbsp;{item.opt3}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt3}
-                                className={`form-check-input  ${item.id} for_result_btn`}
+                                className={`mx-2  ${item.id} for_result_btn`}
                                 checked={selectedOption === item.opt3}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -100,14 +100,14 @@ export default function QuizEasy() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'>
                             <p className='form-check-label'>(d)&nbsp;{item.opt4}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt4}
-                                className={`form-check-input  ${item.id} for_result_btn`}
+                                className={`mx-2  ${item.id} for_result_btn`}
                                 checked={selectedOption === item.opt4}
                                 onChange={(event) => {
                                     setCheckE(false)
@@ -117,7 +117,7 @@ export default function QuizEasy() {
 
                         </div>
                         <div>
-                            <button id={item.id} className={`btn btn-outline-success submitbtn ${item.id}`} onClick={() => {
+                            <button id={item.id} className={`btn btn-outline-secondary submitbtn ${item.id}`} onClick={() => {
                                 if (item.rightAnswer === selectedOption) {
                                     setMarkE(markE + 1);
                                 }
@@ -128,7 +128,7 @@ export default function QuizEasy() {
                                 }
                                 setBtn_Click(btn_click + 1)
 
-                            }} type='submit' style={{ display: 'none' }} ><i class="bi bi-check2-circle"></i></button>
+                            }} type='submit' style={{marginLeft:'48%', display: 'none' }} ><i class="bi bi-check2-circle"></i></button>
                         </div>
                     </div>
                 ))

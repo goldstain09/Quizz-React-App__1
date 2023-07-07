@@ -47,15 +47,15 @@ export default function QuizHard() {
             {
                 c.QuizHard.length > 0 ? c.QuizHard.map((item, index) => (
                     <div key={item.id}>
-                        <h3 className='text-center' >Ques.{index + 1}){item.question}</h3>
-                        <div className='text-center mx-1'>
+                        <h3 className='text-left'align='left' >Ques.{index + 1}){item.question}</h3>
+                        <div className='text-left mx-1'align='left'>
                             <p className='form-check-label' >(a)&nbsp;{item.opt1}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt1}
-                                className={`form-check-input   ${item.id} for_result_btn`}
+                                className={`mx-2 my-0   ${item.id} for_result_btn`}
                                 checked={selectedOption === item.opt1}
                                 onChange={(event) => {
                                     setCheckH(false)
@@ -63,14 +63,14 @@ export default function QuizHard() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'align='left'>
                             <p className='form-check-label'>(b)&nbsp;{item.opt2}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt2}
-                                className={`form-check-input  ${item.id}  for_result_btn`}
+                                className={`mx-2  ${item.id}  for_result_btn`}
                                 checked={selectedOption === item.opt2}
                                 onChange={(event) => {
                                     setCheckH(false)
@@ -78,14 +78,14 @@ export default function QuizHard() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'align='left'>
                             <p className='form-check-label' >(c)&nbsp;{item.opt3}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt3}
-                                className={`form-check-input  ${item.id} for_result_btn`}
+                                className={`mx-2  ${item.id} for_result_btn`}
                                 checked={selectedOption === item.opt3}
                                 onChange={(event) => {
                                     setCheckH(false)
@@ -93,14 +93,14 @@ export default function QuizHard() {
                                     document.getElementById(item.id).style.display = 'inline-block';
                                 }} />
                         </div>
-                        <div className='text-center mx-1'>
+                        <div className='text-left mx-1'align='left'>
                             <p className='form-check-label'>(d)&nbsp;{item.opt4}</p>
                             <input
                                 required
                                 name={index}
                                 type='radio'
                                 value={item.opt4}
-                                className={`form-check-input  ${item.id} for_result_btn`}
+                                className={`mx-2  ${item.id} for_result_btn`}
                                 checked={selectedOption === item.opt4}
                                 onChange={(event) => {
                                     setCheckH(false)
@@ -110,7 +110,7 @@ export default function QuizHard() {
 
                         </div>
                         <div>
-                            <button id={item.id} className={`btn btn-outline-success submitbtn ${item.id}`} onClick={() => {
+                            <button id={item.id} className={`btn btn-outline-secondary submitbtn ${item.id}`} onClick={() => {
                                 if (item.rightAnswer === selectedOption) {
                                     setMarkH(markH + 1);
                                 }
@@ -128,7 +128,7 @@ export default function QuizHard() {
             }
 
 
-            <div className='text-center py-4'>
+            <div className='text-left py-4'>
                 <button
                     id='QuizHardResult_btn'
                     style={{ display: 'none' }}
